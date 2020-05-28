@@ -9,7 +9,7 @@ const List = (props) => {
 
     return (
         props.tasks.map((task, index) => {
-            return <Task key={index} task={task} arr={props.tasks} setTask={props.setTasks} index={index} tasks={props.tasks} />
+            return <Task key={index} task={task} arr={props.tasks} setTasks={props.setTasks} index={index} tasks={props.tasks} />
         })
         // props.tasks.map(element => {
     )

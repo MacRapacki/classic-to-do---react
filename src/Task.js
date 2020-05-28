@@ -4,11 +4,10 @@ import './styles/Task.css'
 const Task = (props) => {
 
     const handleDeleteTask = () => {
-        // console.log(props.tasks)
-        // props.setTasks(
-        //     props.tasks.filter((element, props.index) => {
-        //         element !== props.index
-        //     })
+        const newArr = [...props.arr];
+        newArr.splice(props.index, 1);
+        props.setTasks(newArr)
+
     }
 
     const handleEditTask = () => {
