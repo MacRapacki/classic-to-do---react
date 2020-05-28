@@ -29,6 +29,11 @@ button {
   border-radius: 10px;
 }
 
+.wrapper {
+  width: 100%;
+  text-align: center;
+}
+
 /* ul {
   width: 100%;
   list-style: none;

@@ -33,9 +33,10 @@ function App() {
 
   return (
     <div className="App">
-      <input type="text" placeholder="Type new Task" value={description} onChange={handleInputValue} />
-      <button onClick={handleAddTask}>Add Task</button>
-
+      <div className="wrapper">
+        <input type="text" placeholder="Type new Task" value={description} onChange={handleInputValue} />
+        <button onClick={handleAddTask}>Add Task</button>
+      </div>
       <List tasks={tasks} description={description} setTasks={setTasks} />
 
     </div >
